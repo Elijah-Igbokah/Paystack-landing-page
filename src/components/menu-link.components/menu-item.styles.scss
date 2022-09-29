@@ -1,0 +1,17 @@
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button{
+        background-color: rgba(0,0,0,0);
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        
+    
+        &:hover{
+            color: rgb(54,173,214);
+        }
+    }    
+}
