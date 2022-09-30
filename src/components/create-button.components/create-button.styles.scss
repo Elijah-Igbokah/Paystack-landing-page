@@ -6,4 +6,16 @@
     border-radius: 5px;
     border: none;
     color: white;
+    font-weight: 600;
+    width: 196px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+
+    &:hover{
+        padding-top: 2px;
+        padding-bottom: 5px;
+        // transform: translateY(-0.2px);
+        transition: all ease 0.2s;
+        background: rgb(45, 141, 72);
+    }
 }

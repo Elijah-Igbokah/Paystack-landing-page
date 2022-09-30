@@ -2,7 +2,8 @@
 .nav-bar{
     padding: 12px 48px;
     background: rgb(241,254,244);
-
+    
+    
 
     .container{
         display: flex;
@@ -12,7 +13,7 @@
         
 
         .left-side{
-            width: 60%;
+            width: 100%;
             display: flex;
             flex-direction: row;
         }
@@ -39,6 +40,8 @@
             // list-style: none;
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
 
 
         .items{
@@ -46,6 +49,7 @@
             // list-style: none;
             display: flex;
             flex-direction: row;
+            gap: 20px;
         }
 
         .naija-flag{
@@ -53,14 +57,24 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
             img{
                 width: 16px;
                 height: 15px;
                 
             }
+            
         }
         
         }
     }
+}
+
+.nav-bar.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 12px 48px;
+    background: rgba(241,254,244, 0.95);
 }
 

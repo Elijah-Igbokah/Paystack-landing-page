@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import logo from "../../images/paystack-logo.png"
 import naijaFlag from "../../images/ng.svg"
 import "./nav-bar.styles.scss";
@@ -6,8 +6,32 @@ import MenuItem from "../menu-link.components/menu-item.components";
 import CreateButton from "../create-button.components/create-button.components";
 
 const NavBar = () =>{
+
+    const [sticky, setSticky] = useState(false)
+    useEffect(() => {
+        const handleScroll = () =>{
+            setSticky(window.scrollY > 50)
+        }
+        window.addEventListener('scroll', handleScroll)
+    }
+
+    )
+        
+        
+        // function makeSticky() {
+        //     if (window.pageYOffset >= navbarTop) {
+        //         setSticky(true)
+        //     } else {
+        //         setSticky(false)
+        //     }
+        // };
+
+        // window.addEventListener('scroll', makeSticky())
+
+        
     return(
-        <div className="nav-bar">
+        
+        <div className={sticky ? 'nav-bar sticky' : 'nav-bar'  }>
             <div className="container">
                 <div className="left-side">
                     <div className="img">

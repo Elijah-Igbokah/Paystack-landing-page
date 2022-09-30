@@ -5,7 +5,7 @@ import "./menu-item.styles.scss";
 
 const MenuItem = (props) =>{
     return(
-        <li><button> {props.title} </button></li>
+        <li><button className="links"> {props.title} </button></li>
     );
 }
 

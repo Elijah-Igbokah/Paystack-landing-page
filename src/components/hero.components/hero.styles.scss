@@ -1,0 +1,92 @@
+.hero-section{
+    background: rgb(241,254,244);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    .container{
+        padding: 80px 100px;
+    }
+
+    .hero-text{
+        width: 50%;
+
+    h1{
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 58px;
+        font-family: "Segoe UI";
+    }
+
+    h2{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+
+    .hero-buttons{
+        width: 70%;
+        display: flex;
+        // justify-content: space-between;
+
+    .sales-btn{
+        border: none;
+        background: none;
+        color: rgb(59,183,94);
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    }
+    }
+}
+
+
+.header-bottom{
+    padding: 0px 100px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .left{
+        width: 60%;
+        p{
+            font-weight: 500;
+        }
+        
+    }
+
+    .right{
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            font-weight: 500;
+            line-height: 26px;
+        }
+
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+.icons{
+    width: 100%;
+    
+
+    img{
+        height: 27px;
+        margin-right: 20px;
+
+    }
+}
