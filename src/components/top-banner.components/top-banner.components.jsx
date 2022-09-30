@@ -7,7 +7,6 @@ const TopBanner = () => {
     return(
             <div className='top-banner'>
                 <div className='container'>
-                    <img src="" alt="" />
                     <div className='text'> 🎉 New: Sell your digital products with Storefronts and Product Links</div>
                     <div></div>
                 </div>

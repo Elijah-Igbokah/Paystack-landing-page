@@ -1,0 +1,29 @@
+.card{
+    width: 31%;
+    // height: 500px;
+    background: #fff;
+    padding: 48px 32px;
+    border: 1px solid rgb(240, 242, 243);
+    
+    img{
+        height: 80px;
+    }
+    h2{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 33.6px;
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25.6px;
+        height: 76px;
+    }
+    .learn-more{
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 40px;
+        cursor: pointer;
+    }
+}

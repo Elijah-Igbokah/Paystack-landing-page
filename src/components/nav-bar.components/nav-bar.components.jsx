@@ -10,24 +10,12 @@ const NavBar = () =>{
     const [sticky, setSticky] = useState(false)
     useEffect(() => {
         const handleScroll = () =>{
-            setSticky(window.scrollY > 50)
+            setSticky(window.scrollY > 41)
         }
         window.addEventListener('scroll', handleScroll)
     }
 
     )
-        
-        
-        // function makeSticky() {
-        //     if (window.pageYOffset >= navbarTop) {
-        //         setSticky(true)
-        //     } else {
-        //         setSticky(false)
-        //     }
-        // };
-
-        // window.addEventListener('scroll', makeSticky())
-
         
     return(
         
