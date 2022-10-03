@@ -16,10 +16,11 @@ import IconGrid from "./components/sections/icon-grid/icon-grid.component";
 import Testimonial from "./components/sections/testimonials/testimonial.wrapper";
 import CreateButton from "./components/create-button.components/create-button.components";
 
-import image1 from "./images/Collect-Payments-for-Multiple-Channels-1.1.gif"
-import image2 from "./images/Robust-Suite-of-APIs-Opt.png"
-import bgImage1 from "./images/checked-pattern-blue.png"
-import bgImage2 from "./images/circular-pattern.png"
+import image1 from "./images/Collect-Payments-for-Multiple-Channels-1.1.gif";
+import image2 from "./images/Robust-Suite-of-APIs-Opt.png";
+import bgImage1 from "./images/checked-pattern-blue.png";
+import bgImage2 from "./images/circular-pattern.png";
+import bgImage3 from "./images/curved-pattern.png";
 
 
 function App() {
@@ -75,7 +76,7 @@ function App() {
         <SectionHeading h1="Powering growth for amazing businesses" p="Paystack is a growth engine for a new generation of innovative, forward-looking organizations operating in Africa." />
         <IconGrid />
       </div>
-      <div style={{position: "relative", background: 'rgb(249,251,252)'}}>
+      <div style={{position: "relative", background: 'rgb(249,251,252)', marginBottom: "100px"}}>
         <div className="colored-sect" style={{padding: '100px 50px'}}>
           <SectionHeading h1="Backed by strong global partners" p="Paystack is backed by notable investors as well as some of the best payments companies on the planet." />
           <Testimonial />
@@ -85,15 +86,22 @@ function App() {
         </div>
       </div>
       
-      <div style={{padding: '100px 50px'}}>
-        <p style={{fontSize: "20px"}}>Try Paystack Now</p>
-        <div style={{display: "flex", flexDirection:"row", justifyContent: "space-between"}}>
-          <div style={{width: "70%"}}>
-            <SectionHeading h1="Start accepting payments in just 30 minutes" />
+      <div style={{padding: '100px 50px', position: "relative"}}>
+        <div style={{
+          position: "absolute",
+          zIndex: "1"
+        }}>
+          <p style={{fontSize: "20px"}}>Try Paystack Now</p>
+          <div style={{display: "flex", flexDirection:"row", justifyContent: "space-between"}}>
+            <div style={{width: "70%"}}>
+              <SectionHeading h1="Start accepting payments in just 30 minutes" />
+            </div>
+            <CreateButton tag="Create free account"/>
           </div>
-          <CreateButton tag="Create free account"/>
         </div>
-        
+        <div className="bg-Image3">
+          <img src={bgImage3} alt=""/>
+        </div>
       </div>
     </div>
   );
