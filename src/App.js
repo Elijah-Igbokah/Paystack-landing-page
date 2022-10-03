@@ -13,6 +13,7 @@ import SectionTextWrapper from "./components/sections/Section-Text.component/Sec
 import SectionList from "./components/sections/section-list.components/section-list.component";
 import LinkIcon from "./components/sections/link-icon.components/link-icon.components";
 import IconGrid from "./components/sections/icon-grid/icon-grid.component";
+import Testimonial from "./components/sections/testimonials/testimonial.wrapper";
 
 import image1 from "./images/Collect-Payments-for-Multiple-Channels-1.1.gif"
 import image2 from "./images/Robust-Suite-of-APIs-Opt.png"
@@ -67,6 +68,7 @@ function App() {
       </div>
       <div className="colored-sect" style={{background: 'rgb(249,251,252)'}}>
         <SectionHeading h1="Backed by strong global partners" p="Paystack is backed by notable investors as well as some of the best payments companies on the planet." />
+        <Testimonial />
       </div>
     </div>
   );

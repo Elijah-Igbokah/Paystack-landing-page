@@ -8,18 +8,24 @@ import CreateButton from "../create-button.components/create-button.components";
 const NavBar = () =>{
 
     const [sticky, setSticky] = useState(false)
+    const [bgColor, setBgColor] = useState(false)
     useEffect(() => {
         const handleScroll = () =>{
             setSticky(window.scrollY > 41)
         }
-        window.addEventListener('scroll', handleScroll)
-    }
+        window.addEventListener('scroll', handleScroll);
 
-    )
+        const changeColor = () =>{
+            setBgColor(window.scrollY > 700)
+        }
+        window.addEventListener('scroll', changeColor)
+    }
+    );
+    
         
     return(
         
-        <div className={sticky ? 'nav-bar sticky' : 'nav-bar'  }>
+        <div className={`${sticky ? 'nav-bar sticky' : 'nav-bar'} ${bgColor ? 'nav-bar bg-color' : " "}`}>
             <div className="container">
                 <div className="left-side">
                     <div className="img">
