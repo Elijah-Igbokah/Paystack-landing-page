@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 
 import Header from "./components/header.components/header.components";
 import SectionImage from "./components/sections/section-image.component/section-image.component";
@@ -14,9 +14,12 @@ import SectionList from "./components/sections/section-list.components/section-l
 import LinkIcon from "./components/sections/link-icon.components/link-icon.components";
 import IconGrid from "./components/sections/icon-grid/icon-grid.component";
 import Testimonial from "./components/sections/testimonials/testimonial.wrapper";
+import CreateButton from "./components/create-button.components/create-button.components";
 
 import image1 from "./images/Collect-Payments-for-Multiple-Channels-1.1.gif"
 import image2 from "./images/Robust-Suite-of-APIs-Opt.png"
+import bgImage1 from "./images/checked-pattern-blue.png"
+import bgImage2 from "./images/circular-pattern.png"
 
 
 function App() {
@@ -58,17 +61,39 @@ function App() {
           
         </FlexWrapper>
       </Section>
-        <div className="colored-sect">
-          <SectionHeading h1="Trusted by 70,000+ businesses" p="Thousands of organizations of all sizes trust Paystack to grow their business" />
-          <CardWrapper />
-        </div>
+      <div style={{position: "relative", background: "rgb(234,246,252)"}} >
+          <div className="colored-sect">
+            <SectionHeading h1="Trusted by 70,000+ businesses" p="Thousands of organizations of all sizes trust Paystack to grow their business" />
+            <CardWrapper />
+          </div>
+          <div className="bg-Image">
+              <img src={bgImage1} alt=""/>
+          </div>
+      </div>
+        
       <div style={{padding: '0 50px'}}>
         <SectionHeading h1="Powering growth for amazing businesses" p="Paystack is a growth engine for a new generation of innovative, forward-looking organizations operating in Africa." />
         <IconGrid />
       </div>
-      <div className="colored-sect" style={{background: 'rgb(249,251,252)'}}>
-        <SectionHeading h1="Backed by strong global partners" p="Paystack is backed by notable investors as well as some of the best payments companies on the planet." />
-        <Testimonial />
+      <div style={{position: "relative", background: 'rgb(249,251,252)'}}>
+        <div className="colored-sect" style={{padding: '100px 50px'}}>
+          <SectionHeading h1="Backed by strong global partners" p="Paystack is backed by notable investors as well as some of the best payments companies on the planet." />
+          <Testimonial />
+        </div>
+        <div className="bg-Image2">
+          <img src={bgImage2} alt=""/>
+        </div>
+      </div>
+      
+      <div style={{padding: '100px 50px'}}>
+        <p style={{fontSize: "20px"}}>Try Paystack Now</p>
+        <div style={{display: "flex", flexDirection:"row", justifyContent: "space-between"}}>
+          <div style={{width: "70%"}}>
+            <SectionHeading h1="Start accepting payments in just 30 minutes" />
+          </div>
+          <CreateButton tag="Create free account"/>
+        </div>
+        
       </div>
     </div>
   );

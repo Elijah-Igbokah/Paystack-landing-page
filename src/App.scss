@@ -1,0 +1,27 @@
+.colored-sect{
+    background: transparent;
+    padding: 68.5px;
+    position: absolute;
+    z-index: 1;
+    /* position: relative; */
+}
+
+.bg-Image{
+
+    img{
+        height: 100%;
+        width: 1400px;
+        opacity: 0.08;
+    }
+}
+
+.bg-Image2{
+    position: relative;
+    top: 20px;
+    left: 60%;
+
+    img{
+        height: 100vh;
+        opacity: 0.2;
+    }
+}
