@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./App.css";
 
 import Header from "./components/header.components/header.components";
@@ -12,16 +11,19 @@ import CardWrapper from "./components/Card-wrapper.component/Card-wrapper.compon
 import SectionText from "./components/sections/Section-Text.component/Section-Text.component";
 import SectionTextWrapper from "./components/sections/Section-Text.component/Section-Text-Wrapper.component";
 import SectionList from "./components/sections/section-list.components/section-list.component";
+import LinkIcon from "./components/sections/link-icon.components/link-icon.components";
+import IconGrid from "./components/sections/icon-grid/icon-grid.component";
 
 import image1 from "./images/Collect-Payments-for-Multiple-Channels-1.1.gif"
 import image2 from "./images/Robust-Suite-of-APIs-Opt.png"
+
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Section>
-      <SectionHeading h1="Simple, easy payments" p="Building a business is hard, Getting paid shouldn't be"/>
+        <SectionHeading h1="Simple, easy payments" p="Building a business is hard, Getting paid shouldn't be"/>
         <FlexWrapper>
           <SectionImage img={image1}/>
           <SectionTextWrapper>
@@ -31,6 +33,7 @@ function App() {
               <SectionList item1="Apple Pay" item2="Visa QR" item3="Mobile Money" item4="POS (Coming Soon)"/>
             </FlexWrapper>
             <SectionText h2="Enjoy phenomenal transaction success rates" p="We automatically route payments through the most optimal channels, ensuring the highest transaction success rates in the market."/>
+            <LinkIcon linkText="Find out how we achieve high success rates" />
           </SectionTextWrapper>
         </FlexWrapper>
       </Section>
@@ -39,6 +42,7 @@ function App() {
           <SectionTextWrapper>
             <SectionText h2="Build custom payments experiences with well-documented APIs" p="Developers love our thorough, well-documented APIs that let you to build everything from simple weekend projects, to complex financial products serving hundreds of thousands of customers. If you can imagine it, you can build it with Paystack."/>
             <SectionList item1="Collect one-time and recurring payments from your app or website" item2="Make instant transfers" item3="Retrieve all your transaction and customer data" item4="Verify the identity of customers"/>
+            <LinkIcon linkText="Paystack API Quickstart" />
           </SectionTextWrapper>
           <SectionImage img={image2}/>
         </FlexWrapper>
@@ -57,16 +61,13 @@ function App() {
           <SectionHeading h1="Trusted by 70,000+ businesses" p="Thousands of organizations of all sizes trust Paystack to grow their business" />
           <CardWrapper />
         </div>
-      <Section>
+      <div style={{padding: '0 50px'}}>
         <SectionHeading h1="Powering growth for amazing businesses" p="Paystack is a growth engine for a new generation of innovative, forward-looking organizations operating in Africa." />
-      </Section>
+        <IconGrid />
+      </div>
       <div className="colored-sect" style={{background: 'rgb(249,251,252)'}}>
         <SectionHeading h1="Backed by strong global partners" p="Paystack is backed by notable investors as well as some of the best payments companies on the planet." />
       </div>
-      
-
-
-
     </div>
   );
 };

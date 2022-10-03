@@ -1,0 +1,20 @@
+.icon-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+
+.grid-list{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 120px;
+        height: 30px;
+        object-fit: contain;
+    }
+}

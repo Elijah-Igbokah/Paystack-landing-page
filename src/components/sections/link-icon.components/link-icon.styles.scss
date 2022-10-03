@@ -1,0 +1,28 @@
+.section-link{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+
+    &:hover{
+        .link-icon{
+            background-color:#3bb75e;;
+            color: #fff;
+        }
+    }
+
+    .link-icon{
+        border: solid 2px #3bb75e;
+        color: #3bb75e;
+        border-radius: 50%;
+        padding: 0px 2px 0px 4px;
+        width: 17px;
+        height: 17px;
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}

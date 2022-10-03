@@ -1,10 +1,11 @@
 .section{
-    margin: 100px 116px;
+    margin: 0 116px;
+    margin-bottom: 150px;
+    
 }
 
 .flex-wrapper{
     display: flex;
     flex-direction: row;
     gap: 50px;
-    max-height: 600px;
 }

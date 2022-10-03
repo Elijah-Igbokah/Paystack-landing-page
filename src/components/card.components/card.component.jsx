@@ -1,5 +1,7 @@
 import React from 'react';
 
+import LinkIcon from "../sections/link-icon.components/link-icon.components";
+
 import "./card.styles.scss";
 
 
@@ -11,7 +13,8 @@ const Card = (Props) => {
             <img src={Props.icon} alt="" />
             <h2>{Props.title}</h2>
             <p>{Props.description}</p>
-            <div className='learn-more'>Learn More</div>
+            <LinkIcon linkText2="Learn More" />
+            
         </div>
     );
 };

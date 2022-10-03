@@ -4,6 +4,7 @@
     width: 50%;
     height: 100%;
     gap: 30px;
+    padding: 10px;
 }
 
 .section-text{
@@ -11,6 +12,7 @@
         font-size: 36px;
         font-weight: 600;
         line-height: 43px;
+        margin: 0;
     }
 
     p{
@@ -18,5 +20,6 @@
         font-weight: 400;
         line-height: 29px;
         letter-spacing: -0.2px;
+        // margin: 20px 0;
     }
 }
