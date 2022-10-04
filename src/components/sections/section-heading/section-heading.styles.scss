@@ -18,3 +18,23 @@
         width: 80%;
     }
 }
+
+
+// Responsiveness
+
+@media screen and (max-width: 480px) {
+    .section-heading{
+        width: 100%;
+
+        h1{
+            font-size: 33px;
+            line-height: 40px;
+        }
+    
+        p{
+            font-size: 16px;            
+            line-height: 25px;
+            width: 100%;
+        }
+    }
+  }

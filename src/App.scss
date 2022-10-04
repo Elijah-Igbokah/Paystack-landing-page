@@ -1,11 +1,31 @@
+.colored-wrapper{
+    position: relative;
+    background: rgb(234,246,252);
+}
+
 .colored-sect{
     background: transparent;
     padding: 68.5px;
     position: absolute;
     top: 0;
     z-index: 1;
-    /* position: relative; */
 }
+
+.colored-wrapper2{
+    position: relative;
+    background: rgb(234,246,252);
+    min-height: 800px;
+
+    .colored-sect2{
+        background: transparent;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        padding: 100px 50px;
+    }
+}
+
+
 
 .bg-Image{
 
@@ -34,3 +54,37 @@
     opacity: 0.2;
 
 }
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .colored-wrapper{
+        height: 1200px;
+        margin-bottom: 40px;
+    }
+    
+    .colored-sect{
+        padding: 16px;
+    }
+
+
+    .current{
+        display: none;
+    }
+
+    .hidden{
+        display: block;
+    }
+
+    .colored-wrapper2{
+        position: relative;
+        background: rgb(234,246,252);
+        min-height: 1500px;
+    
+        .colored-sect2{
+            padding: 50px 16px;
+        }
+    }
+
+  }

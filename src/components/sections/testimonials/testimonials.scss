@@ -3,7 +3,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    // gap: 100px;
     height: auto;
 }
 
@@ -59,3 +58,54 @@
         
     }
 }
+
+// RESPONSIVE
+
+@media screen and (max-width: 480px) {
+    .testimonial-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+    }
+    
+    .testimonial-card{
+        width: 100%;
+            
+        .icon{
+            height: 28px;
+        }
+    
+        .profile{
+    
+            .profile-pic{
+                width: 50px;
+                margin-right: 16px;
+                border-radius: 50%;
+                overflow: hidden;
+    
+                img{
+                    width: 100%;
+                }
+            }
+    
+            .bio{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                
+                h2{
+                    font-size: 18px;
+                    margin: 0;
+                    font-weight: 600;
+                }
+                p{
+                    margin: 0;
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+            }
+            
+        }
+    }
+  }

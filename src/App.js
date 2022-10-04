@@ -44,25 +44,31 @@ function App() {
       </Section>
       <Section>
         <FlexWrapper>
+          <div className="hidden">
+            <SectionImage img={image2}/>
+          </div>
           <SectionTextWrapper>
             <SectionText h2="Build custom payments experiences with well-documented APIs" p="Developers love our thorough, well-documented APIs that let you to build everything from simple weekend projects, to complex financial products serving hundreds of thousands of customers. If you can imagine it, you can build it with Paystack."/>
             <SectionList item1="Collect one-time and recurring payments from your app or website" item2="Make instant transfers" item3="Retrieve all your transaction and customer data" item4="Verify the identity of customers"/>
             <LinkIcon linkText="Paystack API Quickstart" />
           </SectionTextWrapper>
-          <SectionImage img={image2}/>
+          <div className="current">
+            <SectionImage img={image2}/>
+          </div>
         </FlexWrapper>
       </Section>
       <Section>
         <FlexWrapper>
-          <SectionVideo url="https://assets.paystack.com/assets/video/content/Advanced-Fraud-Protection.mp4" />
+          <div className="current">
+            <SectionVideo url="https://assets.paystack.com/assets/video/content/Advanced-Fraud-Protection.mp4" />
+          </div>
           <SectionTextWrapper>
             <SectionText h2="Protect yourself and your customers with advanced fraud detection" p="Paystack’s combination of automated and manual fraud systems protect you from fraudulent transactions and associated chargeback claims."/>
             <SectionText h2="Detailed reporting for accounting, reconciliation, and audits" p="Understand your customers’ purchase patterns and do easy reconciliations with a robust data Dashboard and easy exports."/>
           </SectionTextWrapper>
-          
         </FlexWrapper>
       </Section>
-      <div style={{position: "relative", background: "rgb(234,246,252)"}} >
+      <div className="colored-wrapper">
           <div className="colored-sect">
             <SectionHeading h1="Trusted by 70,000+ businesses" p="Thousands of organizations of all sizes trust Paystack to grow their business" />
             <CardWrapper />
@@ -72,12 +78,12 @@ function App() {
           </div>
       </div>
         
-      <div style={{padding: '0 50px'}}>
+      <div style={{padding: '0 5%'}}>
         <SectionHeading h1="Powering growth for amazing businesses" p="Paystack is a growth engine for a new generation of innovative, forward-looking organizations operating in Africa." />
         <IconGrid />
       </div>
-      <div style={{position: "relative", background: 'rgb(249,251,252)', marginBottom: "100px"}}>
-        <div className="colored-sect" style={{padding: '100px 50px'}}>
+      <div className="colored-wrapper2">
+        <div className="colored-sect2">
           <SectionHeading h1="Backed by strong global partners" p="Paystack is backed by notable investors as well as some of the best payments companies on the planet." />
           <Testimonial />
         </div>

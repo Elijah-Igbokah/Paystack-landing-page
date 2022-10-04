@@ -69,6 +69,10 @@
         justify-content: center;
         align-items: center;
 
+        #play-video{
+            display: none;
+        }
+
         p{
             font-weight: 500;
             line-height: 26px;
@@ -90,3 +94,86 @@
 
     }
 }
+
+
+// Media queries
+
+@media screen and (max-width: 480px) {
+    .hero-section{
+        .container{
+            padding: 80px 16px;
+        }
+    
+        .hero-text{
+            width: 90%;
+    
+        h1{
+            font-size: 33px;
+            line-height: 40px;
+            font-family: "Segoe UI";
+        }
+    
+        h2{
+            font-size: 16px;
+            line-height: 25px;
+            letter-spacing: -0.16px;
+        }
+    
+        .hero-buttons{
+            width: 100%;
+            margin-top: 28px;
+            
+    
+        .sales-btn{
+            font-weight: 500;
+            font-size: 14px;
+        }
+        }
+        }
+    }
+    
+    
+    .header-bottom{
+        padding: 0px 16px;
+        margin-bottom: 48px;
+        flex-direction: column;
+        align-items: flex-start;
+    
+        .left{
+            width: 100%;
+            p{
+                font-size: 13px;
+            }
+            
+        }
+    
+        .right{
+            width: 90%;
+            flex-direction: column;
+            align-items: flex-start;
+    
+            #play-video{
+                display: inline-block;
+                align-items: center;
+                margin-left: 10px;
+            }
+
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    .icons{
+        width: 100%;
+        margin-bottom: 60px;
+        
+    
+        img{
+            height: 18px;
+            margin-right: 20px;
+    
+        }
+    }
+    
+  }

@@ -9,3 +9,19 @@
     flex-direction: row;
     gap: 50px;
 }
+
+
+// Responsiveness
+
+@media screen and (max-width: 480px) {
+    .section{
+        margin: 0 16px;
+        margin-bottom: 150px;
+        
+    }
+
+    .flex-wrapper{
+        flex-direction: column;
+        gap: 30px;
+    }
+  }

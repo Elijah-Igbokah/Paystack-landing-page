@@ -31,3 +31,32 @@
         cursor: pointer;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .card{
+        width: 100%;
+        padding: 24px 16px;
+        height: auto;
+    
+        &:first-child{
+            padding: 24px 16px;
+        }
+        
+        h2{
+            font-size: 19px;
+            line-height: 26px;
+        }
+    
+        p{
+            font-size: 15px;
+            line-height: 24px;
+            height: auto;
+        }
+        .learn-more{
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 40px;
+            cursor: pointer;
+        }
+    }
+  }

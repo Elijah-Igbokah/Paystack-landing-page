@@ -3,5 +3,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    // gap: 100px;
 }
+
+@media screen and (max-width: 480px) {
+    .card-wrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+  }

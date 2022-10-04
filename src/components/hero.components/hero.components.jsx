@@ -38,7 +38,7 @@ const Hero = () => {
                 </div>
                 <div className='right'>
                     <p>Watch MTN Chief Transformation Officer, Olubayo Adekanmbi, discuss working with Paystack</p>
-                    <div><img src={playIcon} alt="" /></div>
+                    <div style={{display: "flex", alignItems: "center", cursor: "pointer"}}><img src={playIcon} alt="" /><p id="play-video" style={{color: "rgb(11,164,219)"}}>Play video</p></div>
                 </div>
             </div>
         </div>

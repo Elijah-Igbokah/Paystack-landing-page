@@ -19,3 +19,17 @@
         object-fit: contain;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .icon-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid-list{
+        gap: 30px;
+    
+        img{
+            width: 60px;
+            height: 15px;
+        }
+    }
+  }

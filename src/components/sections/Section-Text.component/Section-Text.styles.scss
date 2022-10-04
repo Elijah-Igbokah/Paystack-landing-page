@@ -1,7 +1,7 @@
 .section-text-wrapper{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     height: 100%;
     gap: 30px;
     padding: 10px;
@@ -23,3 +23,23 @@
         // margin: 20px 0;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .section-text-wrapper{
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .section-text{
+        h1{
+            font-size: 25px;
+            line-height: 31px;
+        }
+    
+        p{
+            font-size: 16px;
+            line-height: 23px;
+            letter-spacing: -0.15px;
+        }
+    }
+  }
